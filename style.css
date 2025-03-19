@@ -71,3 +71,22 @@ p {
   
   // filter: drop-shadow(2px 1.5px 1px rgba(0,0,105,0.9));
 }
+img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain; /* Ensures image is not stretched */
+  display: block;
+}
+div {
+  width: 100%;
+  max-width: 500px; /* Adjust as needed */
+  margin: 0 auto; /* Center it */
+  overflow: hidden;
+}
+@media (max-width: 600px) {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
